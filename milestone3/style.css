@@ -6,9 +6,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px;
-}
 
-.grid {
     display:grid;
     grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
     text-align: center;
@@ -26,9 +24,13 @@
     height: 45px; 
 }
 
+/*added*/
+main{
+    grid-column: 3 / 7;
+}
+
 .overview {
     background-color: rgba(128, 193, 79, 0.3);
-    grid-column: 3/ 7;
     height: 400px;
 }
 

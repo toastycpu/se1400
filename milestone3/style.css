@@ -24,7 +24,6 @@
     height: 45px; 
 }
 
-/*added*/
 main{
     grid-column: 3 / 7;
 }

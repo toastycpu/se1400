@@ -175,8 +175,8 @@ main .overview {
     width: 170px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Ensure the content aligns from the top */
-    align-items: center; /* Center items horizontally */
+    justify-content: flex-start;
+    align-items: center;
     font-family: 'Play', sans-serif;
     font-size: 9px;
     font-weight: 100;
@@ -184,9 +184,9 @@ main .overview {
 
 .card h2 {
     margin: 0;
-    padding: 10px 0; /* Adjust padding to give space from top */
-    font-size: 16px; /* Adjust font size as needed */
-    text-align: center; /* Ensure text is centered */
+    padding: 10px 0;
+    font-size: 16px;
+    text-align: center; 
 }
 
 .card.diary {

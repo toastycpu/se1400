@@ -198,6 +198,19 @@ footer {
     #homehero, #studenthero, #facultyhero, #alumnihero {
         display: none;
     }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    label {
+        text-align: left;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+
 }
 
 form {

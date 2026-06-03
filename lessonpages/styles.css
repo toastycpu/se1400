@@ -1,0 +1,12 @@
+body {
+    font-size: 20pt;
+    font-family: 'Times New Roman', Times, serif;
+    color: burlywood;
+    background-color: antiquewhite;
+    padding: 30pt;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: pink;
+}

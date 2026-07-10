@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-wrapper, main {
+    display:grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+}
+
+.site {
+    grid-column: 2/8;
+    background-color: #5CBCF8;
+    height: 30px;
+}
+
+.nav-section {
+    grid-column: 2/8;
+    background-color: #D2E7FD;
+    height: 60px;
+}
+
+.hero-section {
+    grid-column: 3 / 7;
+    background-color: #8D816D;
+    height: 150px;
+}
+ 
+.cards-section {
+    grid-column: 3 / 7;
+    background-color: #ABABA7;
+    height: 150px;
+}
+ 
+.journal-section {
+    grid-column: 3 / 7;
+    background-color:#D9D9D9;
+    height: 150px;
+}
+
+.footer {
+    grid-column: 2 / 8;
+    background-color: #5CBCF8;
+    height: 60px;
+}

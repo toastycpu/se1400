@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+.grid-wrapper {
+    display:grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+}
+
+main {
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+    background: linear-gradient(to bottom, #AFD7FF 90%, #EBF4FD 100%);
+    padding-bottom: 40px;
+    row-gap: 40px;
+}
+.subgrid-section {
+    display: grid;
+    grid-template-columns: subgrid;
+}
+
+.site {
+    display: flex;
+    grid-column: 1 / -1;
+    align-items: center;
+    gap: 5px;
+    justify-content: right;
+    padding-right: 10px;
+    background-color: #5CBCF8;
+    height: 30px;
+}
+
+.win-btn {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    border: none;
+    background-color: #D2E6FA;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+.win-close {
+    background-color: #D4291A;
+    color: white;
+}
+
+.win-min, .win-max {
+    color: #555594;
+}
+h1{ 
+    width: 100px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 1.1;
+    color: black;
+}
+
+.nav {
+    display: flex;
+    gap: 8px;
+}
+
+.nav a {
+    font-family: 'Space Mono', monospace;
+    text-decoration: none; 
+    color: black;
+    font-size: 15px;
+    font-weight: 800;
+    background-color: #A7B5D7;
+    border-radius: 4px;
+    padding: 4px 9px; 
+}
+ 
+.nav-section {
+    display: flex;
+    grid-column: 1 / -1;
+    background-color: #D2E7FD;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+ 
+.welcome-section {
+    display: flex;
+    grid-column: 3 / 7;
+    height: 300px;
+    padding-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.welcome-banner {
+    background-color: #8E887C;
+    color: white;
+    text-align: center;
+    padding: 45px 60px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+}
+
+.welcome-banner p {
+    font-weight: 540;
+    color: #D1CFCF;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    background-color: #7777A5;
+    padding: 8px 20px;
+    border-radius: 4px;
+    border: 2px solid #C4C0D6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+
+.cta-button p {
+    margin: 0;
+    color: #ffffff;
+}
+.cta-button:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+}
+.cards-section {
+    display: flex;
+    grid-column: 3 / 7;
+    background-color:rgba(171, 171, 167, 0.4); 
+    height: auto;
+    padding: 20px 30px;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.section-label {
+    width: 100%;
+}
+
+.section-label h3 {
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    color: #4A5A6A;
+    font-weight: normal;
+}
+
+.card {
+    display: flex;
+    width: 30%; 
+    background-color: white;
+    border-radius: 6px;
+    flex-direction: column;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+    padding: 12px;
+    font-weight: normal;
+}
+
+
+.journal-section {
+    display: block;
+    grid-column: 3 / 7;
+    background-color: transparent;
+    height: auto;
+    padding-top: 10px;
+    border-top: 2px solid white;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.journal-section .section-label h3 {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: white;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.journal {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.journal h4 {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.journal p {
+    font-size: 12px;
+    color: #2F3E4D;
+    line-height: 1.4;
+}
+ 
+.footer{
+    display: flex;
+    grid-column: 2 / 8;
+    background-color: #5CBCF8;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+}
+
+.hamburger {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+    font-size: 30px;
+}
+
+/* Tablet-ish */
+
+@media (max-width: 992px) {
+    .grid-wrapper, main {
+        grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 128px)) minmax(0px, 1fr);
+    }
+    .welcome-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+        height: 170px;
+        width: 100%;
+    }
+    h2 {
+        font-size: 45px;
+    }
+    .welcome-banner p {
+        font-size: 25px;
+    }
+    .hamburger {
+        display: none;
+    }
+    .cta-button {
+        padding: 15px 35px;
+    }
+    .cta-button p {
+        font-size: 23px;
+    }
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    main {
+        flex: 1;
+    }
+    .nav a {
+        padding: 5px;
+        font-size: 20px;
+    }
+    .cards-section {
+        padding: 40px 40px;
+    }
+    .cards-section .section-label h3 {
+        font-size: 20px;
+    }
+    .journal-section .section-label h3{
+        font-size: 25px;
+    }
+    .journal-section h4{
+        font-size: 25px;
+    }
+    .journal-section p{
+        font-size: 17px;
+    }
+}
+
+/* Phone-ish */
+@media (max-width: 768px) {
+    .grid-wrapper, main {
+        grid-template-columns: 0 repeat(6, 1fr) 0;
+    }
+    .welcome-banner {
+        display: flex;
+        flex-direction: column;
+        height: 170px;
+        width: 265px;
+        align-items: center;
+        justify-content: center;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .welcome-banner p {
+        font-size: 17px;
+    }
+    .hamburger {
+        display: block;
+    }
+    .nav {
+        display: none;
+    }
+    .nav.nav-open {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        background-color: #A7B5D7;
+        border: 2px solid;
+        padding: 3px;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+    }
+    .nav.nav-open a {
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+        border-bottom: 2px solid black;
+    }
+    .nav.nav-open a:last-child {
+        border-bottom: none;
+    }
+    header:has(.nav-open) + main {
+        margin-top: 235px;
+    }
+    .nav-section {
+        position: relative;
+    }
+    .cta-button {
+        padding: 10px 25px;
+    }
+    .cta-button p {
+        font-size: 18px;
+    }
+    .cards-section {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+    }
+    .cards-section .section-label h3 {
+        font-size: 15px;
+    }
+    .journal-section .section-label h3{
+        font-size: 20px;
+    }
+    .journal-section h4{
+        font-size: 20px;
+    }
+    .journal-section p{
+        font-size: 15px;
+    }
+}

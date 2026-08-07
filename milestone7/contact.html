@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog Diaries</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="grid-wrapper">
+        <div class="site">
+            <button class="win-btn win-min">&minus;</button>
+            <button class="win-btn win-max">&square;</button>
+            <button class="win-btn win-close">&times;</button>
+        </div>
+        <section class="subgrid nav-section">
+            <div class="logo">
+                <h1>Analog Diaries</h1>
+            </div>
+            <button class="hamburger" aria-label="navigation toggle">&#9776;</button>
+
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="modding.html">Modding</a>
+                <a href="journal.html">Journal</a>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section class="subgrid intro-section">
+            <div class="section-label">
+                <h3>c:\join\us.txt</h3>
+            </div>
+        </section>
+        <section class="subgrid faq-section">
+            <p>If you are interested in joining a community of vintage tech enthusiasts, 
+                need more help with modding and restoring devices, or just want to live a more analog life, 
+                feel free to reach out and grow your passion with us.
+            </p>
+            <h2>FAQ</h2>
+            <ul>
+                <li>
+                    <strong>Do I need experience with modding to join?</strong>
+                    Of course not. We welcome complete beginners just as much as people you've had experince working with old tech.
+                    We want to build a safe environment where seasoned veterans and newbies feel free to teach and learn from one another.
+                </li>
+                <li>
+                    <strong>Is there a cost to join the club?</strong>
+                    There's no hidden fees, it's completely free. Just fill out the form below, we'll review it and reach out soon.
+                    Donations are much appreciated.
+                    
+                </li>
+                <li>
+                    <strong>What kind of devices does this community focus on?</strong>
+                    Anything analog or older-tech, such as digital cameras, music players, handheld consoles, camcorders, and more. 
+                    If it's got a slower lifestyle than a smartphone or modern tech, it probably fits here. Getting started with customizing and modding can be intimidating, 
+                    which is why we created this site. Somewhere to bring your device, make it uniquely yours, and get a little help if you need it. 
+                    Anything that makes you step away from the loud noise of the world and live in the moment, is the perfect canidate.
+                </li>
+                <li>
+                    <strong>How will I hear back after signing up?</strong>
+                    We'll reach out by email with more info once you submit the form. There we will send you a link to the discord 
+                    community. We will also answer any question you might have by the email as will. 
+                </li>
+            </ul>
+        </section>
+
+        <section class="subgrid signUp-section">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Katniss Everdeen" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="katniss@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="222-222-2222" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="3" placeholder="Do you have any questions?.."></textarea>
+                </div>
+                <p class="form-confirmation">Thanks for joining the Club! We'll reach out soon.</p>
+                <button type="submit" id="submit-signUp">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="grid-wrapper footer">
+        <div class="footer-text">
+            <p>an analog blog &copy; 2026</p>
+        </div>
+    </footer>
+</body>
+</html>
